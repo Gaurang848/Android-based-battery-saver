@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    />
+
+    <style>
+      :root {
+        background-color: #ccc;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: auto;
+      }
+
+      .login-container h2 {
+        text-align: center;
+        font-family: "Gabarito", sans-serif;
+        font-weight: 5;
+        color: #ccaf10;
+        margin-bottom: 20%;
+      }
+
+      .login-container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 100px;
+        font-family: "Gabarito", sans-serif;
+        font-weight: 5;
+        color: #928975;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: none;
+        color: #928975;
+        margin-top: 10%;
+        cursor: none;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #ccaf10;
+        cursor: pointer;
+      }
+
+      .signup-link {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .signup-link a {
+        color: #928975;
+        text-decoration: none;
+      }
+
+      .signup-link a:hover {
+        color: black;
+        transition: 0.2s;
+      }
+      label {
+        color: #0f0d01;
+        font-weight: 50;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form action="index.html" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <input type="submit" value="Login" />
+      </form>
+      <div class="signup-link">
+        <h5>Don't have an account?</h5>
+        <a href="signup.html">Sign up</a>
+      </div>
+    </div>
+  </body>
+</html>

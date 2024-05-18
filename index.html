@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery saver</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont-box">
+        <div class="clock">
+          <div class="time" id="time"></div>
+        </div>
+      </div>
+    <div class="textinbox">
+        <button id="btn">Toggle battery saver</button>
+        <p class="cnt">Battery saver is on</p>
+    </div>
+    </div>
+    <!-- <div class="battery-container">
+      <div class="battery-circle" id="battery-circle"><div class="circletext"><div class="bp">Battery percentage</div>
+      <span id="battery-percentage">--</span></p><p class="cper">%</p></div></div>
+       -->
+
+       <div class="battery">
+        <div class="batterycard">
+          <div class="batterydata">
+              <p class="batterytext">Battery</p>
+              <h1 class="batterypercent">20%</h1>
+            <p class="batterystatus">Low Battery<i      class="fa-solid fa-plug"></i></p>
+          </div>  
+
+          <div class="batterycircle">
+            <div class="batterylevel">
+              <div class="batteryliquid"></div>
+            </div>
+          </div>
+      </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

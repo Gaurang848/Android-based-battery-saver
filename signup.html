@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SigninPage</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: rgb(232, 241, 192);
+      }
+      .signincontainer {
+        align-items: center;
+        width: 400px;
+        padding: 25px;
+        margin: 0 auto;
+        background-color: rgb(240, 236, 232);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+      form label,
+      form input,
+      form select,
+      form textarea {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="number"],
+      input[type="email"],
+      select,
+      textarea {
+        color: black;
+        font-size: medium;
+        font-weight: 200;
+        width: 100%;
+        padding: 5px;
+        margin: 0px auto;
+        border: 1px solid color(black);
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: rgb(101, 201, 101);
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 4px;
+        margin-top: 8px;
+        text-align: center;
+      }
+      input[type="reset"] {
+        background-color: aquamarine;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 4px;
+        margin-top: 8px;
+        margin-left: 40%;
+        width: 20%;
+        border-width: 0.2px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .radio {
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      .login {
+        background-color: aquamarine;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 4px;
+        margin-left: 38%;
+        border-width: 0.2px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        color: rgb(94, 12, 12);
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signincontainer">
+      <h1>Sign in</h1>
+      <form action="index.html" method="post">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required />
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="Password">Password</label>
+        <input type="password" id="Password" name="Password" required />
+
+        <label for="cnfrpassword">Confirm Password</label>
+        <input type="password" id="cnfrPassword" name="cnfrPassword" required />
+
+        <label for="number">Contact number</label>
+        <input type="number"" id="number" name="number" required/>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" />
+
+        <div class="radio">
+          <label for="Gender">Gender</label>
+          <input type="radio" id="male" name="Gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="Gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <input type="submit" id="submit" name="submit" value="Sign in" />
+
+        <input type="reset" id="reset" name="reset" />
+      </form>
+      <button class="login">
+        <a href="login.html"> Back to log in </a>
+      </button>
+    </div>
+  </body>
+</html>
